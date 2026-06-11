@@ -2,10 +2,10 @@
   <div class="home">
     <h1>Minha Lista de Tarefas</h1>
     
-    <!-- Formulário para adicionar tarefas -->
+    <!-- formulário para adicionar tarefas -->
     <TaskForm @adicionar-tarefa="adicionarTarefa" />
     
-    <!-- Filtros -->
+    <!-- filtros -->
     <div class="filtros">
       <button 
         v-for="filtro in opcoesFiltro" 
@@ -17,7 +17,7 @@
       </button>
     </div>
     
-    <!-- Lista de tarefas -->
+    <!-- lista de tarefas -->
     <div v-if="tarefasFiltradas.length > 0" class="tarefas-lista">
       <TaskCard 
         v-for="tarefa in tarefasFiltradas" 
@@ -28,12 +28,12 @@
       />
     </div>
     
-    <!-- Mensagem quando não há tarefas -->
+    <!-- mensagem quando não há tarefas -->
     <div v-else class="sem-tarefas">
       🎉 Nenhuma tarefa {{ filtroAtivo.toLowerCase() }}!
     </div>
     
-    <!-- Contador de tarefas -->
+    <!-- contador de tarefas -->
     <div class="contador">
       📊 Total: {{ tarefas.length }} | 
       ✅ Concluídas: {{ tarefasConcluidas }} | 
@@ -47,28 +47,28 @@ import { ref, computed } from 'vue'
 import TaskForm from '@/components/TaskForm.vue'
 import TaskCard from '@/components/TaskCard.vue'
 
-// Lista de tarefas (cada tarefa é um objeto)
+// lista de tarefas 
 const tarefas = ref([
-  { id: 1, titulo: 'Aprender Vue.js', concluida: false },
-  { id: 2, titulo: 'Criar projeto do trabalho', concluida: false },
-  { id: 3, titulo: 'Entregar trabalho', concluida: false }
+  { id: 1, titulo: 'Aprender a programar', concluida: false },
+  { id: 2, titulo: 'mortal.', concluida: false },
+  { id: 3, titulo: 'Reprovar', concluida: false }
 ])
 
-// Controle do filtro ativo
+// filtro ativo
 const filtroAtivo = ref('Todas')
 const opcoesFiltro = ['Todas', 'Pendentes', 'Concluídas']
 
-// Função para adicionar nova tarefa
+// adicionar nova tarefa com id unico
 function adicionarTarefa(titulo) {
   const novaTarefa = {
-    id: Date.now(), // ID único baseado no timestamp
+    id: Date.now(),
     titulo: titulo,
     concluida: false
   }
   tarefas.value.push(novaTarefa)
 }
 
-// Função para alternar entre concluída/não concluída
+// alternar entre concluída/não concluída
 function alternarConcluida(id) {
   const tarefa = tarefas.value.find(t => t.id === id)
   if (tarefa) {
@@ -76,12 +76,12 @@ function alternarConcluida(id) {
   }
 }
 
-// Função para remover tarefa
+// remover tarefa
 function removerTarefa(id) {
   tarefas.value = tarefas.value.filter(t => t.id !== id)
 }
 
-// Propriedades computadas (filtro e contadores)
+// filtro e contadores
 const tarefasFiltradas = computed(() => {
   if (filtroAtivo.value === 'Pendentes') {
     return tarefas.value.filter(t => !t.concluida)
@@ -114,7 +114,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* Estilo dos filtros */
+/* filtros */
 .filtros {
   display: flex;
   gap: 10px;
@@ -142,12 +142,12 @@ h1 {
   border-color: #42b883;
 }
 
-/* Lista de tarefas */
+/* lista de tarefas */
 .tarefas-lista {
   margin: 20px 0;
 }
 
-/* Mensagem sem tarefas */
+/* mensagem sem tarefas */
 .sem-tarefas {
   text-align: center;
   padding: 40px;
@@ -155,7 +155,7 @@ h1 {
   font-size: 18px;
 }
 
-/* Contador */
+/* contador */
 .contador {
   margin-top: 30px;
   padding: 15px;
@@ -166,7 +166,7 @@ h1 {
   color: #666;
 }
 
-/* Responsividade */
+/* responsividade */
 @media (max-width: 600px) {
   .home {
     padding: 10px;
@@ -186,7 +186,7 @@ h1 {
   }
 }
 
-/* Responsividade para Tablet (768px - 1024px) */
+/* responsividade para tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
   .home {
     max-width: 90%;
@@ -202,7 +202,7 @@ h1 {
   }
 }
 
-/* Responsividade para Smartphone (até 767px) */
+/* responsividade para smartphone */
 @media (max-width: 767px) {
   .home {
     padding: 10px;
@@ -222,7 +222,7 @@ h1 {
   }
   
   input {
-    font-size: 16px; /* Evita zoom no iOS */
+    font-size: 16px; 
     padding: 12px;
   }
   
@@ -269,7 +269,7 @@ h1 {
   }
 }
 
-/* Smartphones muito pequenos (até 480px) */
+/* smartphones pequenos  */
 @media (max-width: 480px) {
   .filtros button {
     font-size: 12px;

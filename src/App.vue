@@ -34,7 +34,6 @@ main {
   padding: 20px 0;
 }
 
-/* Scrollbar personalizada (opcional) */
 ::-webkit-scrollbar {
   width: 8px;
 }

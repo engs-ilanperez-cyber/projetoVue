@@ -18,24 +18,27 @@
 <script setup>
 import { ref } from 'vue'
 
-// Cria uma variável reativa para armazenar o texto da tarefa
+//variável para armazenar o texto da tarefa
 const novaTarefa = ref('')
 
-// Função que será chamada ao adicionar uma tarefa
+// função para adicionar uma tarefa
 function adicionarTarefa() {
   if (novaTarefa.value.trim() !== '') {
-    // Emite um evento para o componente pai
+    // emite um evento para o componente pai
     emit('adicionar-tarefa', novaTarefa.value)
-    // Limpa o input
+    // limpa o input
     novaTarefa.value = ''
   }
 }
 
-// Define qual evento este componente pode emitir
+// define qual evento este componente pode emitir
 const emit = defineEmits(['adicionar-tarefa'])
 </script>
 
 <style scoped>
+
+/* formatação */
+
 .form-container {
   background-color: #f5f5f5;
   padding: 20px;

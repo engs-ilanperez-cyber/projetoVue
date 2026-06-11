@@ -17,10 +17,13 @@
 </template>
 
 <script setup>
-// Não precisa de lógica adicional
+
 </script>
 
 <style scoped>
+
+/* formatação */
+
 .navbar {
   background-color: #2c3e50;
   color: white;
@@ -68,7 +71,8 @@
   color: white;
 }
 
-/* Responsividade */
+/* responsividade */
+
 @media (max-width: 600px) {
   .nav-container {
     flex-direction: column;

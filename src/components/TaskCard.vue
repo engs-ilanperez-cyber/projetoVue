@@ -18,7 +18,9 @@
 </template>
 
 <script setup>
-// Props: recebe os dados da tarefa do componente pai
+
+//recebe os dados da tarefa do componente pai
+
 defineProps({
   tarefa: {
     type: Object,
@@ -26,11 +28,15 @@ defineProps({
   }
 })
 
-// Emits: envia eventos para o componente pai
+//envia eventos para o componente pai
+
 defineEmits(['toggle-tarefa', 'remover-tarefa'])
 </script>
 
 <style scoped>
+
+/* formatação */
+
 .task-card {
   background-color: white;
   border: 1px solid #ddd;
@@ -89,7 +95,8 @@ defineEmits(['toggle-tarefa', 'remover-tarefa'])
   background-color: #cc0000;
 }
 
-/* Responsividade para o TaskCard */
+/* responsividade */
+
 @media (max-width: 767px) {
   .task-card {
     flex-direction: column;

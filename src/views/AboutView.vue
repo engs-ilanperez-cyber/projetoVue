@@ -3,54 +3,31 @@
     <h1>Sobre o Projeto</h1>
     
     <div class="card">
-      <h2>📋 Lista de Tarefas com Vue.js</h2>
-      <p>Este projeto foi desenvolvido como trabalho da disciplina de Desenvolvimento Web, aplicando os conceitos do framework Vue.js.</p>
+      <h2>Site de lista de tarefas</h2>
+      <p>Este projeto foi desenvolvido como trabalho da disciplina de Desenvolvimento Web, aplicando os conceitos do framework Vue.js. </p>
     </div>
 
     <div class="card">
-      <h2>✨ Funcionalidades Implementadas</h2>
+      <h2>Funcionalidades Implementadas</h2>
       <ul>
-        <li>✅ Adicionar novas tarefas</li>
-        <li>✅ Marcar tarefas como concluídas</li>
-        <li>✅ Remover tarefas</li>
-        <li>✅ Filtrar por status (Todas/Pendentes/Concluídas)</li>
-        <li>✅ Contador de tarefas em tempo real</li>
-        <li>✅ Design responsivo (funciona em celular/tablet/desktop)</li>
+        <li>Adicionar novas tarefas</li>
+        <li>Marcar tarefas como concluídas</li>
+        <li>Remover tarefas</li>
+        <li>Filtrar por status (Todas/Pendentes/Concluídas)</li>
+        <li>Contador de tarefas</li>
+        <li>Responsividade (funciona em celular/tablet/desktop)</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>👥 Integrantes do Grupo</h2>
+      <h2>Integrantes</h2>
       <ul>
-        <li><strong>Ilan Pereira</strong> - Desenvolvedor Front-end</li>
-        <li><strong>Nome do Integrante 2</strong> - Desenvolvedor Vue.js</li>
-        <li><strong>Nome do Integrante 3</strong> - Design e Estilização</li>
-        <li><strong>Nome do Integrante 4</strong> - Testes e Documentação</li>
+        <li><strong>Ilan Perez</strong></li>
+  
       </ul>
-      <p class="note">⚠️ Substitua pelos nomes reais do seu grupo!</p>
+    
     </div>
 
-    <div class="card">
-      <h2>🛠️ Tecnologias Utilizadas</h2>
-      <div class="tech-badges">
-        <span class="badge">Vue.js 3</span>
-        <span class="badge">Vue Router</span>
-        <span class="badge">Vite</span>
-        <span class="badge">HTML5</span>
-        <span class="badge">CSS3</span>
-        <span class="badge">JavaScript ES6+</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>📱 Responsividade</h2>
-      <p>O site se adapta automaticamente a diferentes tamanhos de tela:</p>
-      <ul>
-        <li>💻 Desktop: layout completo</li>
-        <li>📟 Tablet: elementos reorganizados</li>
-        <li>📱 Smartphone: layout vertical otimizado</li>
-      </ul>
-    </div>
   </div>
 </template>
 
