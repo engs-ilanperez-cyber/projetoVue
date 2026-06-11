@@ -2,14 +2,14 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <span>✅ TaskManager</span>
+        <span>TaskManager</span>
       </div>
       <div class="nav-links">
         <router-link to="/" class="nav-link" active-class="active-link" exact-active-class="active-link">
-          🏠 Home
+          Home
         </router-link>
         <router-link to="/about" class="nav-link" active-class="active-link">
-          ℹ️ Sobre
+          Sobre
         </router-link>
       </div>
     </div>

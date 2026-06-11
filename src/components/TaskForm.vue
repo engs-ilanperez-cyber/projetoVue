@@ -9,7 +9,7 @@
         placeholder="Digite sua tarefa..."
       >
       <button @click="adicionarTarefa">
-        ➕ Adicionar
+        Adicionar
      </button>
     </div>
   </div>

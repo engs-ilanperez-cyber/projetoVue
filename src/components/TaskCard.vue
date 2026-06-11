@@ -11,7 +11,7 @@
     </div>
     <div class="task-actions">
       <button @click="$emit('remover-tarefa', tarefa.id)" class="delete-btn">
-        🗑️ Remover
+        Remover
       </button>
     </div>
   </div>

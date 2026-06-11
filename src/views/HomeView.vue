@@ -30,14 +30,14 @@
     
     <!-- mensagem quando não há tarefas -->
     <div v-else class="sem-tarefas">
-      🎉 Nenhuma tarefa {{ filtroAtivo.toLowerCase() }}!
+      Nenhuma tarefa {{ filtroAtivo.toLowerCase() }}!
     </div>
     
     <!-- contador de tarefas -->
     <div class="contador">
-      📊 Total: {{ tarefas.length }} | 
-      ✅ Concluídas: {{ tarefasConcluidas }} | 
-      ⏳ Pendentes: {{ tarefasPendentes }}
+      Total: {{ tarefas.length }} | 
+      Concluídas: {{ tarefasConcluidas }} | 
+      Pendentes: {{ tarefasPendentes }}
     </div>
   </div>
 </template>
